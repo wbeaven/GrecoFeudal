@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class Slash : MonoBehaviour
 {
-    public KeyCode slash;
+    public KeyCode slashKey;
     public Collider sword;
+    public Movement movementScript;
 
     void Update()
     {
@@ -14,7 +15,7 @@ public class Slash : MonoBehaviour
 
     void Attack()
     {
-        if (Input.GetKeyDown(slash))
+        if (Input.GetKeyDown(slashKey) && movementScript.grounded == true)
         {
             StartCoroutine(SlashCooldown());
         }
