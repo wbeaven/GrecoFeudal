@@ -15,6 +15,8 @@ public class Enemy : MonoBehaviour
     {
         if (other.CompareTag("Player"))
             Damage();
+        //else if (other.CompareTag("Dagger"))
+        //    dead = true;
     }
     void Damage() //When player runs into enemy, player loses health
     {
