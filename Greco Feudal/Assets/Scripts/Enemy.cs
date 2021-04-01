@@ -11,17 +11,7 @@ public class Enemy : MonoBehaviour
     {
         Killed();
     }
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("Player"))
-            Damage();
-        //else if (other.CompareTag("Dagger"))
-        //    dead = true;
-    }
-    void Damage() //When player runs into enemy, player loses health
-    {
-        //deal damage to player's healthbar
-    }
+
     void Killed() //When player attacks enemy it is set to dead and it's trigger is disabled
     {
         if (dead == true)
