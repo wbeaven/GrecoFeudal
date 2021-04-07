@@ -7,6 +7,7 @@ public class PlayerHealth : MonoBehaviour
     public int maxHealth = 100;
     public int currentHealth;
     public bool hit = false;
+    public int damage = 5;
 
     public HealthBar healthBar;
     // Start is called before the first frame update
@@ -23,9 +24,9 @@ public class PlayerHealth : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Enemy"))
+        if (other.CompareTag("Enemy") || other.CompareTag("Obstacle"))
         {
-            TakeDamage(10);
+            TakeDamage(damage);
         }
     }
 }

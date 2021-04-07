@@ -34,7 +34,6 @@ public class DaggerDetect : MonoBehaviour
     {
         if (other.CompareTag("Enemy"))
         {
-            print("this enemy is real");
             throwPoint = transform.position;
             enemyPos = other.transform.position;
             enemy = other.gameObject;
