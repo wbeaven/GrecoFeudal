@@ -4557,7 +4557,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   daggerKey: 100
-  daggerPrefab: {fileID: 1624378834669301922, guid: fcce9cd915b3c724c83536d59cb1b097, type: 3}
+  daggerPrefab: {fileID: 1624378834669301922, guid: fcce9cd915b3c724c83536d59cb1b097,
+    type: 3}
   movementScript: {fileID: 1212431123}
   daggerRange: {fileID: 1418294061}
   enemyPos: {x: 0, y: 0, z: 0}
@@ -4620,7 +4621,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   daggerKey: 276
-  daggerPrefab: {fileID: 1624378834669301922, guid: 99b93a0d56bacea459a498c9fc992efe, type: 3}
+  daggerPrefab: {fileID: 1624378834669301922, guid: 99b93a0d56bacea459a498c9fc992efe,
+    type: 3}
   movementScript: {fileID: 1666713755}
   daggerRange: {fileID: 1544552430}
   enemyPos: {x: 0, y: 0, z: 0}
